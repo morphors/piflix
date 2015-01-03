@@ -1,0 +1,13 @@
+.btn
+	display: inline-block
+	background: $btn-color
+	padding: 10px 20px
+	border-radius: 5px
+	+nolink
+	cursor: pointer
+
+	&:hover
+		background: saturate($btn-color, 20%)
+	
+	&:active
+		box-shadow: inset 0px 0px 2px 0px $black

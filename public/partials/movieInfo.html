@@ -1,0 +1,19 @@
+<div class="movie-info-left">
+	<img ng-src="{{ movie.LargeCover }}" alt="">
+</div>
+
+<div class="movie-info-right">
+	<h1 class="movie-title">{{ movie.MovieTitleClean }}</h1>
+	<div class="info">
+		<span class="movie-year">{{ movie.MovieYear }}</span> -
+		<span class="movie-runtime">{{ movie.MovieRuntime }} min</span> -
+		<span class="movie-genre">{{ movie.Genre1 }}</span> -
+		<span class="movie-rating">{{ movie.MovieRating }} / 10</span>
+	</div>
+	<p class="movie-description">
+		{{ movie.LongDescription }}
+	</p>
+	<a class="play btn" ng-href="#/play/{{ movie.MovieID }}">Play Movie</a>
+	<a class="movie-trailer btn" ng-href="{{ movie.YoutubeTrailerUrl }}">Watch Trailer</a>
+</div>
+

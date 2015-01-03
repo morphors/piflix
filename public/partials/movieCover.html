@@ -1,0 +1,14 @@
+<div class="movie-cover">
+
+	<a ng-href="#/movie/{{ movie.MovieID }}">
+	
+		<img class="movie-coverimage" ng-src="{{ movie.CoverImage || movie.LargeCover }}" alt="">
+		<p class="movie-title">
+			{{ movie.MovieTitleClean | limitTo: 20}}
+			{{ movie.MovieTitleClean.length > 20 ? "..." : ""}}
+		</p>
+		<small class="movie-year">{{ movie.MovieYear }}</small>
+		
+	</a>
+	
+</div>

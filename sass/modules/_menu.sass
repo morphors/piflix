@@ -1,0 +1,19 @@
+.menu
+	+position(fixed, 0px 0px null 0px)
+	z-index: 5
+	height: $menuheight
+	background: $darkblue
+	color: white
+	padding: 0 1em
+	+display(flex)
+	+justify-content(space-between)
+	
+	ul
+		+nospace
+		li
+			list-style: none
+			display: inline-block
+		
+			a
+				+nolink
+				line-height: 50px
